@@ -1,0 +1,12 @@
+@use "./variables.scss" as v;
+@use "./colors/slate.scss" as slate;
+
+@mixin standard-border($property: border, $color: slate.$c4) {
+  #{$property}: v.$border $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
