@@ -5,12 +5,6 @@
   width: 40rem;
   max-width: 80vw;
   padding: 6rem 3rem;
-  position: absolute;
-  top: 40vh;
-  bottom: 50vh;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
   border-radius: 10px;
 
   @include mixin.flex-center;
@@ -28,5 +22,17 @@
   .tc-timezone {
     color: slate.$c5;
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timecontainer {
+    p {
+      font-size: 4rem;
+    }
+    
+    .tc-timezone {
+      font-size: 1.5rem;
+    }
   }
 }
