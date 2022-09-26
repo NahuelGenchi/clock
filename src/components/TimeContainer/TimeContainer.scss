@@ -1,0 +1,20 @@
+@use "../../scss/colors/slate.scss" as slate;
+@use "../../scss/mixins.scss" as mixin;
+
+.timecontainer {
+  width: 40rem;
+  max-width: 80vw;
+  padding: 4rem;
+  position: absolute;
+  top: 40vh;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  @include mixin.flex-center;
+
+  background-color: slate.$c0;
+  color: slate.$c9;
+}
