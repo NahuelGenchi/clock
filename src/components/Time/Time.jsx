@@ -17,7 +17,7 @@ const Time = () => {
   return(
     <>
       <p className="tc-timezone">{time?.timezone}</p>
-      <p>{time?.hours} : {time?.minutes} : {time?.seconds < 10 ? `0${time?.seconds}` : time?.seconds}</p>
+      <p>{time?.hours < 10 ? `0${time?.hours}` : time?.hours} : {time?.minutes < 10 ? `0${time?.minutes}` : time?.minutes} : {time?.seconds < 10 ? `0${time?.seconds}` : time?.seconds}</p>
     </>
   );
 };
